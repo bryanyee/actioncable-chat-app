@@ -1,5 +1,6 @@
 # README
 
+```
 rails new ac
 cd ac
 rails g controller rooms show
@@ -22,3 +23,13 @@ rails g devise:install
 rails g devise User
 rails g migration AddUserToMessages user:references:index
 rails db:migrate
+(add user relationship to message model)
+(add authentication to rooms controller)
+(update applicaiton.html.erb & _message.html.erb)
+(update room.coffee & rooms.coffee & rooms/show.html.erb)
+(create config/initializers/warden_hooks.rb)
+(update channels/application_cable/connection.rb)
+bin/spring start ?
+rails c =>  Message.all.update_all user_id: 1
+(sign up a new user in the app)
+```

@@ -1,4 +1,11 @@
 <h1>ActionCable Chat</h1>
+<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+
+<form>
+  <label>Message</label>
+  <input type="text" id="message_input" name="message_input">
+</form>
+
 <div id="messages">
   <%= render @messages %>
 </div>
